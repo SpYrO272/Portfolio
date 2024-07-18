@@ -1,0 +1,294 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playwrite Display", serif;
+    
+}
+
+
+#container{
+    width: 100%;
+    height: 100vh;
+    /* placed in its normal position .. parent div*/
+    position: relative;
+
+}
+
+#navbar{
+    /* to make child  element into inline */
+    display: flex;
+    width: 85;
+    /* move the navbar portion to left */
+    margin-left: 100px;
+    /* effect in horizontally. space betwwwn img and ul tag. applied to child tag*/
+    justify-content: space-between;
+    /* to place the child ( img and ul )content vertically center */
+    align-items: center;
+  
+}
+#logo{
+    width: 130px;
+}
+.listItem{
+    /* // to remove the styling of list items // */
+    list-style: none;
+    display: inline;
+    /* margin : (topbottom)px (leftright)px */
+    margin: 10px 20px;
+       /*to oncrease boldness*/
+    font-weight: 700;
+
+}
+/* used to define a special state of an element */
+li a:hover{
+    color: rgb(255, 2, 2);
+}
+li a{
+    /* to remove underline in a tag */
+    text-decoration: none;
+    color: black;
+}  
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+    font-family: "Playwrite Display", serif;
+}
+#title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#title p{
+    font-size: 20px;
+}
+#lastname{
+    color: rgb(243, 148, 24);
+}
+#title a{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+#images{
+    width: 45%;
+    height: 80%;
+    /* related to paraent div. position will changed in the border of parent div */
+    position: absolute; 
+    bottom: 0px;
+    right: 30px;
+}
+.imagegroup{
+    /* combine 2 images together */
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* to move hover smoothly */
+    transition: bottom 1s, left 2s;
+}
+#images:hover #shape{
+    bottom: 70px;
+}
+#images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 20% 8% 0% 8%;
+    font-family: "Playwrite Display", serif;
+}
+#titleabout{
+    text-align: center;
+}
+#titleabout h2{
+    font-size: 40px;
+}
+#titleabout p{
+    font-size: 30px;
+    color: green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* rem- related to html element font-sizine dependent */
+    margin-top: 2rem;
+}
+#content_deatils p{
+   /* this property is to align the both sides of a paragraph */
+    text-align:justify;
+    font-weight:540;
+    font-size: 20px;
+
+}
+.info{
+    
+    font-size: 20px;
+    font-weight:540;
+}
+#content_img img{
+    width: 80%;
+}
+.info span{
+    margin-left: 1rem;
+}
+#skillsec{
+    margin: 2% 8% 0% 8%;
+    font-family: "Playwrite Display", serif;
+}
+#skillheading{
+    text-align: center;
+}
+#skillheading h2{
+    font-size: 40px;
+}
+#skillheading p{
+    font-size: 30px;
+    color: green;
+}
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+#skill_img{
+    width: 90%;
+}
+.lang{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+.lang span{
+    font-weight: 800;
+    font-size: 20px;
+}
+.bar{
+    width: 90%;
+    height: 0.5rem;    
+    background-color: rgb(0, 0, 0);
+    /* default div is invisible....border radius to find out the 2 div */
+    border-radius: 10px;
+    position: absolute;
+    /* bottom left right only impact on position property */
+    bottom: 0px;
+    
+
+}
+#hyper{
+    width: 85%;
+    background-color: orange;
+}
+#css{
+    width: 79%;
+    background-color: orange;
+}
+#react{
+    width: 78%;
+    background-color: orange;
+}
+#js{
+    width: 75%;
+    background-color: orange;
+}
+#contact{
+    margin: 2% 8% 0% 8%;
+    font-family: "Playwrite Display", serif;
+}
+#contacthead{
+    text-align: center;
+}
+#contacthead h2{
+        font-size: 40px;
+}
+#contacthead p{
+        font-size: 30px;
+        color: green;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding-bottom: 50px;
+
+}
+.logos{
+    width: 50px;
+    height: 50px;
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to make div circle */
+    border-radius: 50%;
+    
+}
+
+.logos i{
+    color: black;
+}
+.logos:hover{
+    background-image: linear-gradient(to bottom right, yellow, rgb(207, 138, 8) );
+    animation: anime 0.5s infinite;
+}
+@keyframes anime{
+    0% { 
+        transform: rotate(6deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-7deg); 
+    } 
+  
+    50% { 
+        transform: rotate(6deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-7deg); 
+    } 
+  
+    100% { 
+        transform: rotate(6deg); 
+    } 
+}
+
+.logos:hover i{
+    color: rgb(255, 255, 255);
+}
+footer{
+    margin: 2.5rem 0px;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.uparrow{
+    width: 50px;
+    height: 50px;
+    margin: 0px 50px 50px 0px;
+   
+    /* to make div circle */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* to make div circle */
+   border-radius: 50%;
+    background-image: linear-gradient(to bottom right,yellow ,red);
+    float: right;
+}
+body{
+    scroll-behavior: smooth;
+    
+}
